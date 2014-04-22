@@ -2,6 +2,7 @@
 
     Name:       black-milk
     Description: based heavily off Bram de Haan's atelier-scheme lakeside and Nikhil Sonnad's Adaptation for Ipython Notebook
+    CodeMirror template adapted for IPython Notebook by Nikhil Sonnad (https://github.com/nsonnad/base16-ipython-notebook)
     CodeMirror template by Jan T. Sott (https://github.com/idleberg/base16-chrome-devtools)
     Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/base16)
 
@@ -26,6 +27,9 @@ div#maintoolbar {display: none !important;}
 
 div#notebook {border-top: none;}
 
+div.prompt{
+    width: 3.5em;
+}
 
 div.cell.code_cell { /* area that contains code + output */
     background: #fff;
@@ -53,20 +57,37 @@ div.output_subarea.output_text.output_stream.output_stdout,div.output_subarea.ou
     margin-top: 1px; /*This is for getting the box-shadow property of the parent to display properly;*/
 }
 
+div.output_wrapper {
+    margin-top: 0px;
+    position: relative;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    -moz-box-align: stretch;
+    width: 100%;
+}
+
 div.prompt.input_prompt {
     font-size: 12px;
     color: #5d5db1;
     background-color: #fcfcff;
     border: 0px;
-    width: 1em;
+    width: 4em;
+   
+}
+
+div.prompt.output_prompt {
+    font-size: 12px;
+    color: #5d5db1;
+    background-color: #fcfcff;
+    border: 0px;
+    width: 4em;
    
 }
 
 
-
 div.cell.border-box-sizing.code_cell.running { 
     /* draw border around running cells */
-    border: 3px dotted #f33;
+    border: 1px dotted #f33;
 }
 
 div.input_prompt {color: #5d5db1;}
