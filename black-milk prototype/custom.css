@@ -1,0 +1,134 @@
+/*
+
+    Name:       black-milk
+    Description: based heavily off Bram de Haan's atelier-scheme lakeside and Nikhil Sonnad's Adaptation for Ipython Notebook
+    CodeMirror template by Jan T. Sott (https://github.com/idleberg/base16-chrome-devtools)
+    Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/base16)
+
+*/
+
+div#notebook, div.CodeMirror, div.output_area pre, div.output_wrapper, div.prompt {
+  font-family: 'Source Code Pro', monospace !important;
+  font-size: 13.5px;
+}
+
+/* GLOBALS */
+body {background-color: #ffffff;}
+a {color: #257fad;}
+
+/* INTRO PAGE */
+.toolbar_info, .list-container {color: #1f292e;}
+
+/* NOTEBOOK */
+
+/* comment out this line to bring the toolbar back */
+div#maintoolbar {display: none !important;}
+
+div#notebook {border-top: none;}
+
+
+div.cell.code_cell { /* area that contains code + output */
+    background: #fff;
+    border: none;
+    padding-top: 1ex;
+}
+
+div.cell.text_cell { /* area that contains code + output */
+    background: #dfffe0;
+    border: none;
+   
+    padding-top: 1ex;
+}
+
+div.text_cell_render {
+/*font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;*/
+font-family: "Charis SIL", serif; /* Make non-code text serif. */
+line-height: 145%; /* added for some line spacing of text. */
+width: 105ex; /* instead of 'inherit' for shorter lines */
+}
+
+div.output_subarea.output_text.output_stream.output_stdout,div.output_subarea.output_text {
+    margin-left: 0em;
+    padding-bottom: 0.5em;
+    margin-top: 1px; /*This is for getting the box-shadow property of the parent to display properly;*/
+}
+
+div.prompt.input_prompt {
+    font-size: 12px;
+    color: #5d5db1;
+    background-color: #fcfcff;
+    border: 0px;
+    width: 1em;
+   
+}
+
+
+
+div.cell.border-box-sizing.code_cell.running { 
+    /* draw border around running cells */
+    border: 3px dotted #f33;
+}
+
+div.input_prompt {color: #5d5db1;}
+
+div.output_prompt {
+    color: #ffffff;
+}
+div.input_area {
+  border-radius: 0px;
+  border: none;
+}
+div.output{
+  background: #fcfcff;
+}
+
+
+div.output_area pre {font-weight: normal; color: #516d7b;}
+
+.rendered_html table, .rendered_html th, .rendered_html tr, .rendered_html td {
+  border: 1px  #5a7b8c solid;
+  color: #5a7b8c;
+}
+div.output_html { font-family: sans-serif; }
+table.dataframe tr {border: 1px #516d7b;}
+
+div.cell.selected {border-radius: 0px;}
+div.cell.edit_mode {border-radius: 0px; border: thin dotted #e9a1c0;}
+div.text_cell_render, div.output_html {color: #516d7b;}
+
+span.ansiblack {color: #1f292e;}
+span.ansiblue {color: #2d8f6f;}
+span.ansigray {color: #7195a8;}
+span.ansigreen {color: #568c3b;}
+span.ansipurple {color: #5d5db1;}
+span.ansired {color: #d22d72;}
+span.ansiyellow {color: #8a8a0f;}
+
+div.output_stderr {background-color: #d22d72;}
+div.output_stderr pre {color: #c1e4f6;}
+
+.cm-s-ipython.CodeMirror {background: #ebf8ff; color: #1f292e;}
+.cm-s-ipython div.CodeMirror-selected {background: #c1e4f6 !important;}
+.cm-s-ipython .CodeMirror-gutters {background: #ebf8ff; border-right: 0px;}
+.cm-s-ipython .CodeMirror-linenumber {color: #7195a8;}
+.cm-s-ipython .CodeMirror-cursor {border-left: 1px solid #5a7b8c !important;}
+
+.cm-s-ipython span.cm-comment {color: #b72dd2;}
+.cm-s-ipython span.cm-atom {color: #5d5db1;}
+.cm-s-ipython span.cm-number {color: #5d5db1;}
+
+.cm-s-ipython span.cm-property, .cm-s-ipython span.cm-attribute {color: #568c3b;}
+.cm-s-ipython span.cm-keyword {color: #d22d72;}
+.cm-s-ipython span.cm-string {color: #8a8a0f;}
+.cm-s-ipython span.cm-operator {color: #b72dd2;}
+.cm-s-ipython span.cm-builtin {color: #5d5db1;}
+
+.cm-s-ipython span.cm-variable {color: #568c3b;}
+.cm-s-ipython span.cm-variable-2 {color: #257fad;}
+.cm-s-ipython span.cm-def {color: #935c25;}
+.cm-s-ipython span.cm-error {background: #d22d72; color: #5a7b8c;}
+.cm-s-ipython span.cm-bracket {color: #516d7b;}
+.cm-s-ipython span.cm-tag {color: #d22d72;}
+.cm-s-ipython span.cm-link {color: #5d5db1;}
+
+.cm-s-ipython .CodeMirror-matchingbracket { text-decoration: underline; color: #1f292e !important;}
