@@ -1,4 +1,4 @@
-Ipython Themes
+IPython Themes
 ==============
 
 
